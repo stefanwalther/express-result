@@ -1,5 +1,6 @@
 const HttpStatus = require('http-status-codes');
 
+// Todo: Just found express-status, which some similar functionality, have a look ...
 class ExpressStatus {
 
   static ok(res, result) {
