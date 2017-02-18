@@ -11,9 +11,14 @@ class ExpressStatus {
   }
 
   static error(res, err) {
+    res.setHeader('Content-Type', 'application/json');
     res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(err);
   }
 
+  static json(res, json) {
+    res.setHeader('Content-Type', 'application/json');
+    res.status(HttpStatus.OK).json(json);
+  }
 }
 
 module.exports = ExpressStatus;
