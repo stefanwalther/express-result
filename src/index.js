@@ -20,6 +20,12 @@ class ExpressStatus {
     res.setHeader('Content-Type', 'application/json');
     res.status(HttpStatus.OK).json(json);
   }
+
+  static unauthorized(res, json) {
+    res.setHeader('Content-Type', 'application/json');
+    res.status(HttpStatus.UNAUTHORIZED).json(json);
+
+  }
 }
 
 module.exports = ExpressStatus;
