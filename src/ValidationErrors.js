@@ -1,6 +1,8 @@
 
 class ValidationError {
-
+  constructor( o ) {
+    Object.assign(this, o);
+  }
 }
 
 class ValidationErrors {
@@ -12,6 +14,10 @@ class ValidationErrors {
   add(o) {
     this.length = this.ValidationErrors.push(o);
   }
+
+  // Todo: remove
+
+  // Todo: find
 
 }
 
