@@ -20,7 +20,7 @@
     "lint:test:fix": "eslint test --fix"
   },
   "dependencies": {
-    "eslint-config-space-single": "^0.0.4",
+    "eslint-config-space-single": "^0.1.1",
     "express": "^4.14.1",
     "http-status-codes": "^1.1.6"
   },
