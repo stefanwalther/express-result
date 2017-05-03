@@ -1,5 +1,7 @@
 # express-result
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/stefanwalther/express-result.svg)](https://greenkeeper.io/)
+
 > Results for express.js
 
 ## Install
