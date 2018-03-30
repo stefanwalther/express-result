@@ -1,6 +1,6 @@
 
 class ValidationError {
-  constructor( o ) {
+  constructor(o) {
     Object.assign(this, o);
   }
 }
