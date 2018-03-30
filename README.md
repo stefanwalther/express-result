@@ -3,14 +3,9 @@
 > Results for express.js
 
 ## Install
-Install using [npm]()
+Install using [npm](https://npmjs.org)
 ```sh
 $ npm install express-result --save
-```
-
-Install using [yarn]()
-```sh
-$ yarn add express-result
 ```
 
 ## Author
