@@ -1,9 +1,9 @@
 
-class ValidationError {
-  constructor(o) {
-    Object.assign(this, o);
-  }
-}
+// class ValidationError {
+//   constructor(o) {
+//     Object.assign(this, o);
+//   }
+// }
 
 class ValidationErrors {
   constructor() {
