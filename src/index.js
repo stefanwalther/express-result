@@ -11,7 +11,7 @@ class ExpressStatus {
    * @static
    */
   static ok(res, result) {
-    res.status(HttpStatus.OK).json(result);
+    return res.status(HttpStatus.OK).json(result);
   }
 
   /**
@@ -22,7 +22,7 @@ class ExpressStatus {
    * @static
    */
   static created(res, result) {
-    res.status(HttpStatus.CREATED).json(result);
+    return res.status(HttpStatus.CREATED).json(result);
   }
 
   /**
@@ -34,7 +34,7 @@ class ExpressStatus {
    */
   static error(res, err) {
     res.setHeader('Content-Type', 'application/json');
-    res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(err);
+    return res.status(HttpStatus.INTERNAL_SERVER_ERROR).json(err);
   }
 
   /**
@@ -46,12 +46,12 @@ class ExpressStatus {
    */
   static json(res, json) {
     res.setHeader('Content-Type', 'application/json');
-    res.status(HttpStatus.OK).json(json);
+    return res.status(HttpStatus.OK).json(json);
   }
 
   static unauthorized(res, json) {
     res.setHeader('Content-Type', 'application/json');
-    res.status(HttpStatus.UNAUTHORIZED).json(json);
+    return res.status(HttpStatus.UNAUTHORIZED).json(json);
 
   }
 }
