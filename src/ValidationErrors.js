@@ -1,5 +1,5 @@
 
-// class ValidationError {
+// Class ValidationError {
 //   constructor(o) {
 //     Object.assign(this, o);
 //   }
