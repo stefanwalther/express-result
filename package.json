@@ -11,7 +11,6 @@
   "main": "index.js",
   "repository": "https://github.com/stefanwalther/express-result",
   "scripts": {
-    "docs": "docker run --rm -v ${PWD}:/opt/verb stefanwalther/verb",
     "lint": "npm run lint:src && npm run lint:test",
     "lint:fix": "npm run lint:src:fix && npm run lint:test:fix",
     "lint:src": "eslint src",
