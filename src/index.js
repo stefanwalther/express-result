@@ -49,6 +49,12 @@ class ExpressStatus {
     return res.status(HttpStatus.OK).json(json);
   }
 
+  /**
+   *
+   * @param {*} res
+   * @param {*} json
+   * @static
+   */
   static unauthorized(res, json) {
     res.setHeader('Content-Type', 'application/json');
     return res.status(HttpStatus.UNAUTHORIZED).json(json);
