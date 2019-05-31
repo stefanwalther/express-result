@@ -58,7 +58,10 @@ class ExpressStatus {
   static unauthorized(res, json) {
     res.setHeader('Content-Type', 'application/json');
     return res.status(HttpStatus.UNAUTHORIZED).json(json);
+  }
 
+  static noContent(res) {
+    return res.status(HttpStatus.NO_CONTENT);
   }
 }
 
